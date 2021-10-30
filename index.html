@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard for Pizza Website</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        
+        <div class="sidebar" id="navbarSupportedContent">
+            <div class="brand">
+                <h3>
+                    <span class="fab fa-untappd"></span>pacers
+                </h3>
+            </div>
+            <div class="profile-card">
+                <div class="profile-img" style=" background-image: url('images/portfolio-image.jpg');">
+                </div>
+                <div class="profile-info">
+                    <h2>Heather Parker</h2>
+                    <small>Web Architect</small>
+                </div>
+                <div class="profile-action">
+                    <a href="" class="btn btn-white">
+                        <span class="fas fa-coins"></span>
+                        $2,300
+                    </a>
+                </div>
+                <div class="profile-icons">
+                    <span class="fas fa-user"></span>
+                    <span class="far fa-comment"></span>
+                    <span class="fas fa-file-invoice"></span>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="menu-item">
+                    <a href="" class="active">
+                        <span class="fas fa-home"></span>
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="fas fa-project-diagram"></span>
+                        <span>Projects</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="" class="">
+                        <span class="fas fa-tasks"></span>
+                        <span>Tasks</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="fas fa-columns"></span>
+                        <span>Kanban</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="fas fa-users-cog"></span>
+                        <span>Users</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="fas fa-user-ninja"></span>
+                        <span>Profile</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="fas fa-file-invoice"></span>
+                        <span>Invoice</span>
+                    </a>
+                </div>
+                <div class="menu-item">
+                    <a href="">
+                        <span class="fas fa-cogs"></span>
+                        <span>widgets</span>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-card">
+                <h2>Hello Parker</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatum mollitia maxime
+                    officiis officia debitis laboriosam eum neque. Fuga voluptatibus qui repellat tempora vero molestias
+                    quam ipsa ratione odio beatae?</p>
+                <a href="" class="btn btn-block btn-white">Get Started</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <label id="menu-toggle">
+                    <!-- <span class="fas fa-bars"></span> -->
+                    <button class="navbar-toggler " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+                        <span class="fas fa-bars"></span> <span class="navbar-toggler-icon "></span></button>
+                </label>
+                <div class="head-icons">
+                    <span class="fas fa-search"></span>
+                    <span class="far fa-comment"></span>
+                    <span class="far fa-bell"></span>
+                    <div class="head-avatar">
+                        <div class="avatar" style="background-image: url('images/portfolio-image.jpg');"></div>
+                        <span>Nona nona</span>
+
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="page-header">
+                    <h1>Morning Heather</h1>
+                    <small>Have a nice day</small>
+                </div>
+                <div class="analytics">
+                    <div class="card engage-card">
+                        <div class="card-head">
+                            Engagement
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-wrapper">
+                                <div id="chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card emails-card">
+                        <div class="card-head">
+                            Email sent
+                        </div>
+                        <div class="card-body">
+                            <div id="emailChart"></div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="emails-info">
+                                <div class="email-stat">
+                                    <span class="status bg-danger"></span>
+                                    <span>36 not sent</span>
+                                </div>
+                                <div class="email-stat">
+                                    <span class="status bg-warning"></span>
+                                    <span>38 opened</span>
+                                </div>
+                                <div class="email-stat">
+                                    <span class="status bg-success"></span>
+                                    <span>75 success</span>
+                                </div>
+                                <div class="email-stat">
+                                    <span class="status bg-danger"></span>
+                                    <span>SMTP error</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="card team-progress">
+                        <div class="card-head">
+                            <div class="team-head">
+                                <div>
+                                    <h3>Team progress</h3>
+                                    <small>89 ,344 sales</small>
+                                </div>
+                                <select name="" id="">
+                                    <option value="">User</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Author</th>
+                                        <th>Company</th>
+                                        <th width="22%">Progress</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="images/portfolio-image.jpg" alt="">
+                                                </div>
+                                                <div class="team-details">
+                                                    <h4>Noha nona</h4>
+                                                    <small>HTML, JS, Angular 12</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>Jone</h4>
+                                                <small>Web UI/UX Design</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="team-progress">
+                                                <h4>65%</h4>
+                                                <div class="progrees-bar">
+                                                    <div class="indicator success" style="width: 65%;">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-main">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="images/portfolio-image.jpg" alt="">
+                                                </div>
+                                                <div class="team-details">
+                                                    <h4>Noha nona</h4>
+                                                    <small>HTML, JS, Angular 12</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>Jone</h4>
+                                                <small>Web UI/UX Design</small>
+                                            </div>
+                                        </td>
+                                        <td width="20%">
+                                            <div class="team-progress">
+                                                <h4>Loli</h4>
+                                                <div class="progrees-bar">
+                                                    <div class="indicator danger" style="width: 35%;">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-main">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="images/portfolio-image.jpg" alt="">
+                                                </div>
+                                                <div class="team-details">
+                                                    <h4>Noha nona</h4>
+                                                    <small>HTML, JS, Angular 12</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>Jone</h4>
+                                                <small>Web UI/UX Design</small>
+                                            </div>
+                                        </td>
+                                        <td width="20%">
+                                            <div class="team-progress">
+                                                <h4>Loli</h4>
+                                                <div class="progrees-bar">
+                                                    <div class="indicator info" style="width: 20%;">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-main">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="team-info">
+                                                <div class="team-img">
+                                                    <img src="images/portfolio-image.jpg" alt="">
+                                                </div>
+                                                <div class="team-details">
+                                                    <h4>Noha nona</h4>
+                                                    <small>HTML, JS, Angular 12</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="company-info">
+                                                <h4>Jone</h4>
+                                                <small>Web UI/UX Design</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="team-progress">
+                                                <h4>Loli</h4>
+                                                <div class="progrees-bar">
+                                                    <div class="indicator indicator" style="width: 65%;">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-main">View</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                    <div class="card competitors">
+                        <div class="card-head">
+                            <div class="team-head">
+                                <div>
+                                    <h4>My Competitors</h4>
+                                    <small>More than 400+ new members</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="compete-info">
+                                <div>
+                                    <img src="images/portfolio-image.jpg" alt="">
+                                    <div class="compete-details">
+                                        <h4>Cup & Green</h4>
+                                        <small>Study High Way Types</small>
+                                        <p>By: <a href="">Code Resource</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="compete-sales">
+                                    <h3>24.00</h3>
+                                    <span>Sales</span>
+                                </div>
+                            </div>
+                            <div class="compete-info">
+                                <img src="images/portfolio-image.jpg" alt="">
+                                <div class="compete-details">
+                                    <h4>Cup & Green</h4>
+                                    <small>Study High Way Types</small>
+                                    <p>By: <a href="">Code Resource</a></p>
+                                </div>
+                                <div class="compete-sales">
+                                    <h3>24.00</h3>
+                                    <span>Sales</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
